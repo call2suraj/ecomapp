@@ -6,14 +6,15 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
+import "./items.scss";
 
 export default function Items(props) {
 
     return (
         <Grid>
             <Paper elevation={3} style={{ margin: 1 }} >
-                <Card style={{ height: 410, width: 300 }}>
-                    <img src={props.img} alt="tv" height={208} width={240} style={{ margin: 5 }} />
+                <Card className='card'>
+                    <img src={props.img} alt="tv" height={208} width={240} className='margin' />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
                             {props?.name}

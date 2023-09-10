@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css';
+import './App.scss';
 import data from './data/data';
 import InputLabel from '@mui/material/InputLabel';
 import Select from '@mui/material/Select';
@@ -41,8 +41,8 @@ function App() {
   };
 
   return (
-    <div style={{ display: 'flex' }}>
-      <div style={{ width: 400, margin: 20 }}>
+    <div style={{ display: 'flex', margin: 25 }}>
+      <div className='main-div'>
         <InputLabel id="demo-simple-select-label">Select the Product</InputLabel>
         <Select labelId="demo-simple-select-label" style={{ width: 200 }} onChange={handleChange} defaultValue={'all'}>
           {Object.keys(list)?.map((choice) => (
@@ -52,7 +52,7 @@ function App() {
           ))}
         </Select>
       </div>
-      <div style={{ margin: 20, paddingLeft: 20, textAlign: 'center', }}>
+      <div className='child-div'>
         <div style={{ width: '50%' }}>
           <TextField
             id="outlined-basic"
@@ -63,7 +63,7 @@ function App() {
             value={inputText}
           />
         </div>
-        <div style={{ width: 606, height: 420, textAlign: 'center', marginTop: 10, display: 'flex'}}>
+        <div className='grid-div'>
           {
             <Grid container spacing={{ xs: 2, md: 1 }} columns={{ xs: 4, sm: 8, md: 6 }} >
               {
