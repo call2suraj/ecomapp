@@ -9,6 +9,7 @@ import Grid from '@mui/material/Grid';
 import "../styles/items.scss";
 
 export default function Items(props) {
+    // console.log(props.data)
 
     return (
         <Grid>

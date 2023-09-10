@@ -40,6 +40,7 @@ function App() {
     setFilterList(filteredData);
   };
 
+  console.log('filterList', filterList.length)
   return (
     <div style={{ display: 'flex', margin: 25 }}>
       <div className='main-div'>
@@ -59,17 +60,18 @@ function App() {
             onChange={inputHandler}
             variant="outlined"
             fullWidth
-            label="Search"
+            label="Search by brand name"
             value={inputText}
           />
         </div>
         <div className='grid-div'>
           {
             <Grid container spacing={{ xs: 2, md: 1 }} columns={{ xs: 4, sm: 8, md: 6 }} >
+              {filterList.length ==0 ? <div className='margin-small'>No Data Found</div> : null}
               {
                 filterList?.map((dt) => (
                   <Grid xs={2} sm={4} md={3} key={dt.name} spacing={5}>
-                    <Items img={dt.img} name={dt.name} desc={dt.description} data={list[id]?.details?.items} inputText={inputText} />
+                    <Items img={dt.img} name={dt.name} desc={dt.description} inputText={inputText} />
                   </Grid>
                 ))
               }

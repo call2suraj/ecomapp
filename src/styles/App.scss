@@ -46,6 +46,15 @@
   display: 'flex';
 }
 
+.margin-small {
+  margin-left: 5px;
+}
+
+.outer-div { 
+  display: 'flex';
+  margin: 25px; 
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
