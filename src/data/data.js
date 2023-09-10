@@ -1,7 +1,6 @@
-import lcd1 from '../images/lcd11.jpeg';
-import lcd2 from '../images/lcd12.jpeg';
+import lcd11 from '../images/lcd11.jpeg';
+import lcd12 from '../images/lcd12.jpeg';
 import lcd3 from '../images/lcd3.jpeg';
-import lcd4 from '../images/lcd4.jpeg';
 import mob1 from '../images/mob1.jpeg';
 import mob5 from '../images/mob5.jpeg';
 import mob7 from '../images/mob7.jpeg';
@@ -13,8 +12,8 @@ export default {
     "value": "File",
     "details": {
       "items": [
-        {"name":"Lavis",  "value": "New", "img": lcd1, "description":'Lavis SMART TV is a television set with integrated Internet capabilities that offers more clarity' },
-        {"name":"SamsungTv","value": "Open", "img": lcd2, "description":'Samsung SMART TV is a television set with integrated Internet capabilities that offers more clarity' },
+        {"name":"Lavis",  "value": "New", "img": lcd11, "description":'Lavis SMART TV is a television set with integrated Internet capabilities that offers more clarity' },
+        {"name":"SamsungTv","value": "Open", "img": lcd12, "description":'Samsung SMART TV is a television set with integrated Internet capabilities that offers more clarity' },
         {"name":"LG", "value": "Close", "img": lcd3, "description":'LG SMART TV is a television set with integrated Internet capabilities that offers more clarity' },
         {"name":"Sony",  "value": "New", "img": mob1, "description":'Mobile set with integrated Internet capabilities that offers more clarity' },
         {"name":"Samsung","value": "Open", "img": mob4, "description":'Mobile set with Internet capabilities that offers faster connectivity' },
@@ -42,8 +41,8 @@ export default {
     "value": "File",
     "details": {
       "items": [
-        {"name":"Lavis",  "value": "New", "img": lcd1, "description":'Lavis SMART TV is a television set with integrated Internet capabilities that offers more clarity' },
-        {"name":"SamsungTv","value": "Open", "img": lcd2, "description":'Samsung SMART TV is a television set with integrated Internet capabilities that offers more clarity' },
+        {"name":"Lavis",  "value": "New", "img": lcd11, "description":'Lavis SMART TV is a television set with integrated Internet capabilities that offers more clarity' },
+        {"name":"SamsungTv","value": "Open", "img": lcd12, "description":'Samsung SMART TV is a television set with integrated Internet capabilities that offers more clarity' },
         {"name":"LG", "value": "Close", "img": lcd3, "description":'LG SMART TV is a television set with integrated Internet capabilities that offers more clarity' },
       ]
     }

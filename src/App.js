@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.scss';
+import './styles/App.scss';
 import data from './data/data';
 import InputLabel from '@mui/material/InputLabel';
 import Select from '@mui/material/Select';
