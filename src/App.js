@@ -17,6 +17,7 @@ function App() {
   const handleChange = (event) => {
     setId(event.target.value);
     setFilterList(list[event.target.value]?.details?.items);
+    setInputText('');
   };
 
   let inputHandler = (e) => {
@@ -52,13 +53,14 @@ function App() {
         </Select>
       </div>
       <div style={{ margin: 20, paddingLeft: 20, textAlign: 'center', }}>
-        <div style={{ width: '30%' }}>
+        <div style={{ width: '50%' }}>
           <TextField
             id="outlined-basic"
             onChange={inputHandler}
             variant="outlined"
             fullWidth
             label="Search"
+            value={inputText}
           />
         </div>
         <div style={{ width: 606, height: 420, textAlign: 'center', marginTop: 10, display: 'flex'}}>
