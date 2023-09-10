@@ -31,7 +31,7 @@ function App() {
       if (inputText === '') {
         return el;
       }
-      //return the item which contains the user input
+      //return the item which contains the user input (brand name)
       else {
         return el.name?.toLowerCase().includes(lowerCase)
       }
