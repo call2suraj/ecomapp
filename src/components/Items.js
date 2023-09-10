@@ -16,7 +16,7 @@ export default function Items(props) {
             <Paper elevation={3} style={{ margin: 1 }} >
                 <Card className='card'>
                     <img src={props.img} alt="tv" height={208} width={240} className='margin' />
-                    <CardContent>
+                    <CardContent style={{height: 100}}>
                         <Typography gutterBottom variant="h5" component="div">
                             {props?.name}
                         </Typography>
