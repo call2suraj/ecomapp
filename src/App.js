@@ -66,7 +66,7 @@ function App() {
         </div>
         <div className='grid-div'>
           {
-            <Grid container spacing={{ xs: 2, md: 1 }} columns={{ xs: 4, sm: 8, md: 6 }} >
+            <Grid container spacing={{ xs: 2, md: 1 }} columns={{ xs: 4, sm: 8, md: 10 }} >
               {filterList.length ==0 ? <div className='margin-small'>No Data Found</div> : null}
               {
                 filterList?.map((dt) => (
